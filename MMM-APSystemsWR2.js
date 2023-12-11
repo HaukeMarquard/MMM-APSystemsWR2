@@ -51,7 +51,7 @@ Module.register("MMM-APSystemsWR2", {
     } else {
       var container = document.createElement("div");
       var img = document.createElement("img");
-      img.src = "solaranlage.png";
+      img.src = "/MMM-APSystemsWR2/solaranlage.png";
       const value_one_container = document.createElement("div");
       value_one_container.classList.add("value_one_container");
       const value_one = document.createElement("p");
