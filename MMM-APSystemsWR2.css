@@ -60,7 +60,7 @@
 } */
 
 .value_container {
-  background-color: rgba(120, 0, 0, 0.5);
+  /* background-color: rgba(120, 0, 0, 0.5); */
   position: absolute;
   height: 21px;
   width: 47px;
