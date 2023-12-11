@@ -67,6 +67,13 @@ Module.register("MMM-APSystemsWR2", {
       value_two.innerText = `200`;
       value_two_container.appendChild(value_two);
 
+      const wr_container = document.createElement("div");
+      wr_container.classList.add("wr_container");
+      wr_container.classList.add("value_container");
+      const wr = document.createElement("p");
+      wr.innerText = `400`;
+      wr_container.appendChild(wr);
+
       //   const rain_container = document.createElement("div");
       //   rain_container.style.display = "flex";
       //   rain_container.style.align_items = "center";
@@ -83,6 +90,7 @@ Module.register("MMM-APSystemsWR2", {
       container.appendChild(img);
       container.appendChild(value_one_container);
       container.appendChild(value_two_container);
+      container.appendChild(wr_container);
       //   container.classList.add("container");
       //   var output = document.createElement("div");
       //   output.classList.add("output");
