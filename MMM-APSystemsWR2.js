@@ -67,11 +67,13 @@ Module.register("MMM-APSystemsWR2", {
       value_two.innerText = `${this.weather.data.p2}`;
       value_two_container.appendChild(value_two);
 
+      const output_value = this.weather.data.p1 + this.weather.data.p2;
+
       const wr_container = document.createElement("div");
       wr_container.classList.add("wr_container");
       wr_container.classList.add("value_container");
       const wr = document.createElement("p");
-      wr.innerText = `400`;
+      wr.innerText = output_value;
       wr_container.appendChild(wr);
 
       const output_container = document.createElement("div");
