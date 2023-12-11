@@ -63,15 +63,15 @@
   background-color: rgba(120, 0, 0, 0.5);
   position: absolute;
   height: 24px;
-  width: 51px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .value_one_container {
-  left: 220px;
-  bottom: 200px;
+  left: 218px;
+  bottom: 195px;
 }
 
 .value_two_container {
