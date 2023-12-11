@@ -64,7 +64,7 @@ Module.register("MMM-APSystemsWR2", {
       rain_container.style.align_items = "center";
       rain_container.style.justifyContent = "center";
       const rain = document.createElement("p");
-      rain.innerText = `${this.weather.forecast.forecastday[i].day.daily_chance_of_rain}%`;
+      rain.innerText = `20%`;
       const r_img = document.createElement("img");
       r_img.classList.add("small");
       r_img.src = "/MMM-APSystemsWR2/regentropfen.png";
