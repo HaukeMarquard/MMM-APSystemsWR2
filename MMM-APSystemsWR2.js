@@ -67,7 +67,7 @@ Module.register("MMM-APSystemsWR2", {
       rain.innerText = `20%`;
       const r_img = document.createElement("img");
       r_img.classList.add("small");
-      r_img.src = "/MMM-APSystemsWR2/regentropfen.png";
+      r_img.src = "/MMM-APSystemsWR2/solaranlage.png";
       rain_container.appendChild(r_img);
       rain_container.appendChild(rain);
       container.appendChild(rain_container);
