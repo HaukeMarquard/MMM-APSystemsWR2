@@ -50,14 +50,15 @@ Module.register("MMM-APSystemsWR2", {
       return wrapper;
     } else {
       var container = document.createElement("div");
-      var img = document.createElement("img");
-      img.src = "/MMM-APSystemsWR2/solaranlage.png";
-      const value_one_container = document.createElement("div");
-      value_one_container.classList.add("value_one_container");
-      const value_one = document.createElement("p");
-      value_one.innerText = `${this.weather.data.p1}`;
-      value_one.classList.add("value_one");
-      value_one_container.appendChild(value_one);
+      //   var img = document.createElement("img");
+      //   img.src = "/MMM-APSystemsWR2/solaranlage.png";
+      //   const value_one_container = document.createElement("div");
+      //   value_one_container.classList.add("value_one_container");
+      //   const value_one = document.createElement("p");
+      //   value_one.innerText = `${this.weather.data.p1}`;
+      //   value_one.classList.add("value_one");
+      //   value_one_container.appendChild(value_one);
+
       const rain_container = document.createElement("div");
       rain_container.style.display = "flex";
       rain_container.style.align_items = "center";
@@ -66,12 +67,13 @@ Module.register("MMM-APSystemsWR2", {
       rain.innerText = `${this.weather.forecast.forecastday[i].day.daily_chance_of_rain}%`;
       const r_img = document.createElement("img");
       r_img.classList.add("small");
-      r_img.src = "/MMM-Tomorrow-Weather/regentropfen.png";
+      r_img.src = "/MMM-APSystemsWR2/regentropfen.png";
       rain_container.appendChild(r_img);
       rain_container.appendChild(rain);
       container.appendChild(rain_container);
-      container.appendChild(img);
-      container.appendChild(value_one_container);
+
+      //   container.appendChild(img);
+      //   container.appendChild(value_one_container);
       //   container.classList.add("container");
       //   var output = document.createElement("div");
       //   output.classList.add("output");
