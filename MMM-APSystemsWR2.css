@@ -69,6 +69,10 @@
   justify-content: center;
 }
 
+.value_container p {
+  color: white;
+}
+
 .value_one_container {
   left: 217px;
   bottom: 258px;
