@@ -80,8 +80,13 @@
 }
 
 .wr_container {
-  left: 118px;
-  bottom: 135px;
+  left: 95px;
+  bottom: 125px;
+}
+
+.output_container {
+  left: 60px;
+  bottom: 125px;
 }
 
 img.solaranlage {

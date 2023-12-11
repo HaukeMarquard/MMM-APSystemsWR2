@@ -74,6 +74,13 @@ Module.register("MMM-APSystemsWR2", {
       wr.innerText = `400`;
       wr_container.appendChild(wr);
 
+      const output_container = document.createElement("div");
+      output_container.classList.add("output_container");
+      output_container.classList.add("value_container");
+      const output = document.createElement("p");
+      output.innerText = `400`;
+      output_container.appendChild(output);
+
       //   const rain_container = document.createElement("div");
       //   rain_container.style.display = "flex";
       //   rain_container.style.align_items = "center";
