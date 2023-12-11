@@ -63,7 +63,7 @@
   background-color: rgba(120, 0, 0, 0.5);
   position: absolute;
   left: 242px;
-  top: 10px;
+  bottom: 100px;
   height: 24px;
   width: 51px;
   display: flex;
