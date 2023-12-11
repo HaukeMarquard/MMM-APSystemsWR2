@@ -80,8 +80,11 @@ Module.register("MMM-APSystemsWR2", {
       output_container.classList.add("output_container");
       output_container.classList.add("value_container");
       const output = document.createElement("p");
-      output.innerText = `400`;
+      output.innerText = `${output_value > 600 ? 600 : output_value}}`;
       output_container.appendChild(output);
+
+      const daily_value = document.createElement("p");
+      daily_value.innerText = `${this.daily_value}`;
 
       //   const rain_container = document.createElement("div");
       //   rain_container.style.display = "flex";
@@ -101,6 +104,7 @@ Module.register("MMM-APSystemsWR2", {
       container.appendChild(value_two_container);
       container.appendChild(wr_container);
       container.appendChild(output_container);
+      container.appendChild(daily_value);
       //   container.classList.add("container");
       //   var output = document.createElement("div");
       //   output.classList.add("output");
