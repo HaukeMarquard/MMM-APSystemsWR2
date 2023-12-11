@@ -63,7 +63,7 @@
   background-color: rgba(120, 0, 0, 0.5);
   position: absolute;
   height: 21px;
-  width: 46px;
+  width: 47px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,12 +71,12 @@
 
 .value_one_container {
   left: 217px;
-  bottom: 189px;
+  bottom: 188px;
 }
 
 .value_two_container {
   left: 158px;
-  bottom: 31px;
+  bottom: 29px;
 }
 
 img.solaranlage {
