@@ -58,6 +58,7 @@ Module.register("MMM-APSystemsWR2", {
       value_one.innerText = `${this.weather.data.p1}`;
       value_one.classList.add("value_one");
       value_one_container.appendChild(value_one);
+      container.appendChild(img);
       container.appendChild(value_one_container);
       //   container.classList.add("container");
       //   var output = document.createElement("div");
