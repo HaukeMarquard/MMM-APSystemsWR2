@@ -98,6 +98,7 @@ Module.register("MMM-APSystemsWR2", {
       container.appendChild(value_one_container);
       container.appendChild(value_two_container);
       container.appendChild(wr_container);
+      container.appendChild(output_container);
       //   container.classList.add("container");
       //   var output = document.createElement("div");
       //   output.classList.add("output");
