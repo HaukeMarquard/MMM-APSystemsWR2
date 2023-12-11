@@ -80,11 +80,15 @@ Module.register("MMM-APSystemsWR2", {
       output_container.classList.add("output_container");
       output_container.classList.add("value_container");
       const output = document.createElement("p");
-      output.innerText = `${output_value > 600 ? 600 : output_value}}`;
+      output.innerText = `${output_value > 600 ? 600 : output_value}`;
       output_container.appendChild(output);
 
       const daily_value = document.createElement("p");
-      daily_value.innerText = `${this.daily_value}`;
+      daily_value.innerText = `Tagesertrag: ${this.daily_value.toFixed(
+        2
+      )} / Gesamterzeugung: ${(
+        this.weather.data.te1 + this.weather.data.te2
+      ).toFixed(2)}`;
 
       //   const rain_container = document.createElement("div");
       //   rain_container.style.display = "flex";
