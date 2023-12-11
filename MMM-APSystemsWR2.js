@@ -58,6 +58,18 @@ Module.register("MMM-APSystemsWR2", {
       value_one.innerText = `${this.weather.data.p1}`;
       value_one.classList.add("value_one");
       value_one_container.appendChild(value_one);
+      const rain_container = document.createElement("div");
+      rain_container.style.display = "flex";
+      rain_container.style.align_items = "center";
+      rain_container.style.justifyContent = "center";
+      const rain = document.createElement("p");
+      rain.innerText = `${this.weather.forecast.forecastday[i].day.daily_chance_of_rain}%`;
+      const r_img = document.createElement("img");
+      r_img.classList.add("small");
+      r_img.src = "/MMM-Tomorrow-Weather/regentropfen.png";
+      rain_container.appendChild(r_img);
+      rain_container.appendChild(rain);
+      container.appendChild(rain_container);
       container.appendChild(img);
       container.appendChild(value_one_container);
       //   container.classList.add("container");
