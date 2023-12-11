@@ -77,10 +77,14 @@ Module.register("MMM-APSystemsWR2", {
       strang_two_value.innerText = `${this.weather.data.p2} W`;
       strang_two.appendChild(strang_two_value);
 
+      const test_p = document.createElement("p");
+      test_p.innerText = `123`;
+      test_p.classList.add("test_p");
       container.appendChild(output);
       container.appendChild(wr);
       container.appendChild(strang_one);
       container.appendChild(strang_two);
+      container.appendChild(test_p);
       return container;
     }
   },
