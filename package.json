@@ -1,0 +1,22 @@
+{
+  "name": "mmm-apsystemswr2",
+  "version": "1.0.0",
+  "description": "A module for MagicMirror 2 displaying WR Data",
+  "main": "MMM-APSystemsWR2.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaukeMarquard/MMM-APSystemsWR2"
+  },
+  "keywords": [
+    "magic",
+    "mirror",
+    "2",
+    "apsystems",
+    "solar"
+  ],
+  "author": "Hauke Marquard",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.0"
+  }
+}
