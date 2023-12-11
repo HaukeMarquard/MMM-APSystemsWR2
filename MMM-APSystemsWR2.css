@@ -59,16 +59,24 @@
   right: 20px;
 } */
 
-.value_one_container {
+.value_container {
   background-color: rgba(120, 0, 0, 0.5);
   position: absolute;
-  left: 242px;
-  bottom: 100px;
   height: 24px;
   width: 51px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.value_one_container {
+  left: 220px;
+  bottom: 200px;
+}
+
+.value_two_container {
+  left: 220px;
+  bottom: 200px;
 }
 
 img.solaranlage {

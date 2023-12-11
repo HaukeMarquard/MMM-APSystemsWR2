@@ -55,10 +55,17 @@ Module.register("MMM-APSystemsWR2", {
       img.classList.add("solaranlage");
       const value_one_container = document.createElement("div");
       value_one_container.classList.add("value_one_container");
+      value_one_container.classList.add("value_container");
       const value_one = document.createElement("p");
       value_one.innerText = `200`;
-      value_one.classList.add("value_one");
       value_one_container.appendChild(value_one);
+
+      const value_two_container = document.createElement("div");
+      value_two_container.classList.add("value_two_container");
+      value_two_container.classList.add("value_container");
+      const value_two = document.createElement("p");
+      value_two.innerText = `200`;
+      value_two_container.appendChild(value_two);
 
       //   const rain_container = document.createElement("div");
       //   rain_container.style.display = "flex";
