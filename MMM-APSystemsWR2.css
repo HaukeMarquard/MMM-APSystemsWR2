@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: grid;
   grid-auto-rows: min-content;
   grid-auto-columns: min-content;
@@ -57,4 +57,16 @@
 .test_p {
   position: absolute;
   right: 20px;
+} */
+
+.value_one_container {
+  background-color: rgba(120, 0, 0, 0.5);
+  position: absolute;
+  left: 242px;
+  top: 10px;
+  height: 24px;
+  width: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
