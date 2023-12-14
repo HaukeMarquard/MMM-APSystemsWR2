@@ -1,16 +1,21 @@
 Module.register("MMM-APSystemsWR2", {
   defaults: {
-    updateInterval: 60 * 1000, // every 10 minutes
+    updateInterval: 60 * 1000 * 3, // every 5 minutes
     text: "APSystems WR",
-    lat: "",
-    lon: "",
-    api_key: "",
   },
   start: function () {
     Log.info("Starting Module: " + this.name);
     Log.info("Starting dingens durch hier");
-    this.weather = null;
-    this.status = "ONLINE";
+    this.weather = {
+      data: {
+        p1: 0,
+        p2: 0,
+        e1: 0,
+        e2: 0,
+        te1: 0,
+        te2: 0,
+      },
+    };
     this.daily_value = 0.537;
     this.sheduleUpdate();
   },
@@ -27,13 +32,10 @@ Module.register("MMM-APSystemsWR2", {
   },
   processWeather: function (data) {
     this.weather = data;
-    this.status = "ONLINE";
     this.daily_value = this.weather.data.e1 + this.weather.data.e2;
-    //Datenverarbeitung
     this.updateDom();
   },
   processOffline: function (data) {
-    this.status = "OFFLINE";
     const date = new Date();
     const hour = date.getHours();
     if (hour == 0) {
