@@ -12,8 +12,8 @@ Module.register("MMM-APSystemsWR2", {
         p2: 0,
         e1: 0,
         e2: 0,
-        te1: 0,
-        te2: 0,
+        te1: 43.66,
+        te2: 80.15,
       },
     };
     this.date = "15.12.2023";
