@@ -16,6 +16,7 @@ Module.register("MMM-APSystemsWR2", {
         te2: 0,
       },
     };
+    this.date = "15.12.2023";
     this.daily_value = 0.537;
     this.sheduleUpdate();
   },
@@ -33,14 +34,11 @@ Module.register("MMM-APSystemsWR2", {
   processWeather: function (data) {
     this.weather = data;
     this.daily_value = this.weather.data.e1 + this.weather.data.e2;
+    const d = new Date();
+    this.date = `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()}`;
     this.updateDom();
   },
   processOffline: function (data) {
-    const date = new Date();
-    const hour = date.getHours();
-    if (hour == 0) {
-      this.daily_value = 0;
-    }
     this.weather.data.p1 = 0;
     this.weather.data.p2 = 0;
     this.updateDom();
@@ -86,7 +84,7 @@ Module.register("MMM-APSystemsWR2", {
       output_container.appendChild(output);
 
       const daily_value = document.createElement("p");
-      daily_value.innerText = `Tagesertrag: ${this.daily_value.toFixed(
+      daily_value.innerText = `${this.date}: ${this.daily_value.toFixed(
         2
       )} kW / Gesamterzeugung: ${(
         this.weather.data.te1 + this.weather.data.te2
