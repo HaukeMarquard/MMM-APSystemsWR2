@@ -33,7 +33,9 @@ Module.register("MMM-APSystemsWR2", {
   },
   processWeather: function (data) {
     this.weather = data;
-    this.daily_value = this.weather.data.e1 + this.weather.data.e2;
+    if (this.weather.data.p1 > 0 || this.weather.data.p2 > 0) {
+      this.daily_value = this.weather.data.e1 + this.weather.data.e2;
+    }
     const d = new Date();
     this.date = `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()}`;
     this.updateDom();
